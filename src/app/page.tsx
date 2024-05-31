@@ -25,7 +25,7 @@ export default function Home() {
                     embark on a journey of ownership in the digital realm. Join us
                      in redefining the future of art and collectibles through blockchain
                       technology.</p>
-                             <Link href="https://maze-nft.vercel.app/">
+                             <Link href="/profile">
                                 <button className="mt-8 bg-primary_dark hover:bg-primary_dark text-black bg-[#FFDF2B] px-4 py-2 rounded-lg">Explore More</button>
                              </Link>
               </div>
