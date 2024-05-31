@@ -1,26 +1,11 @@
-"use client"
-import Image from 'next/image'
-import axios from "axios";
+
 import Link from "next/link";
-import React, {useState} from "react";
-import {toast} from "react-hot-toast";
-import {useRouter} from "next/navigation";
+import React from "react";
 
 
 export default function Home() {
 
-  const router = useRouter()
-  const [data, setData] = useState("nothing")
-  const logout = async () => {
-      try {
-          await axios.get('/api/users/logout')
-          toast.success('Logout successful')
-          router.push('/login')
-      } catch (error:any) {
-          console.log(error.message);
-          toast.error(error.message)
-      }
-  }
+
 
   return (
     <>
@@ -47,13 +32,7 @@ export default function Home() {
             </div>
           </>
         </div>
-        <div>
-             <button
-               onClick={logout}
-               className=" absolute  bg-[#FFDF2B] text-black px-4 py-2 rounded-lg right-4 top-4">
-               Logout
-              </button>
-            </div>
+       
     </>
   )
 }
